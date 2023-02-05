@@ -10,6 +10,7 @@ import React, {useLayoutEffect} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import Categories from '../components/Categories';
 import ItemsFeed from '../components/ItemsFeed';
+import Header from '../components/Header';
 
 const Artifacts = () => {
   const navigation = useNavigation();
@@ -21,6 +22,7 @@ const Artifacts = () => {
   }, []);
   return (
     <SafeAreaView style={styles.pageStyle}>
+      <Header />
       <View style={styles.searchInputArea}>
         {/* Icon */}
         <Image
@@ -29,7 +31,7 @@ const Artifacts = () => {
           style={{
             width: 20,
             height: 20,
-            tintColor: '#9059f6',
+            tintColor: '#9058f7',
           }}
         />
         <TextInput
@@ -45,15 +47,16 @@ const Artifacts = () => {
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
+            justifyContent: 'space-between',
             paddingBottom: 3,
           }}>
           <Text style={styles.mostViewedTitle}>Categories</Text>
           <Image
-            source={require('../assets/icons/chevronDown.png')}
+            source={require('../assets/icons/arrowRight.png')}
             resizeMode="contain"
             style={{
-              width: 10,
-              height: 10,
+              width: 20,
+              height: 20,
               tintColor: '#9058f7',
             }}
           />

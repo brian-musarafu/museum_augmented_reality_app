@@ -13,6 +13,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import Categories from '../components/Categories';
 import ItemsFeed from '../components/ItemsFeed';
 import MostViewed from '../components/MostViewed';
+import Header from '../components/Header';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -24,35 +25,9 @@ const HomeScreen = () => {
   }, []);
   return (
     <SafeAreaView style={styles.pageStyle}>
-      <View style={styles.headerWrapper}>
-        {/* Header */}
-        <View>
-          <Image
-            style={styles.accountProfile}
-            source={{
-              uri: 'https://scontent.fhre1-1.fna.fbcdn.net/v/t39.30808-6/322692020_1152843278935133_1980589386525220045_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zk6LwkB6OJgAX8N9rvF&tn=8fn_zEYtzWvQ-mTD&_nc_ht=scontent.fhre1-1.fna&oh=00_AfBZ2v0BgcuLKr8Neqvt1iyc3iM-jpJfVXguYKexGE7x5g&oe=63DCB2E0',
-            }}
-          />
-        </View>
-        <View
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            paddingBottom: 3,
-          }}>
-          <Text style={styles.accountName}>Brian Musarafu</Text>
-          <Image
-            source={require('../assets/icons/chevronDown.png')}
-            resizeMode="contain"
-            style={{
-              width: 15,
-              height: 15,
-              tintColor: '#9058f7',
-            }}
-          />
-        </View>
-      </View>
+      {/* Header component */}
+      <Header />
+      {/* Home Design */}
       <ScrollView>
         <View style={styles.welcomeViewArea}>
           <View>
@@ -97,6 +72,7 @@ const HomeScreen = () => {
               placeholderTextColor="grey"
             />
           </View>
+          {/* Most Viewed Section */}
           <View>
             <View
               style={{
@@ -119,6 +95,7 @@ const HomeScreen = () => {
             <MostViewed />
           </View>
         </View>
+        {/* Categories View */}
         <View style={styles.categoriesView}>
           <View
             style={{
@@ -126,14 +103,15 @@ const HomeScreen = () => {
               flexDirection: 'row',
               alignItems: 'center',
               paddingBottom: 3,
+              justifyContent: 'space-between',
             }}>
             <Text style={styles.mostViewedTitle}>Categories</Text>
             <Image
-              source={require('../assets/icons/chevronDown.png')}
+              source={require('../assets/icons/arrowRight.png')}
               resizeMode="contain"
               style={{
-                width: 10,
-                height: 10,
+                width: 20,
+                height: 20,
                 tintColor: '#9058f7',
               }}
             />
@@ -141,6 +119,7 @@ const HomeScreen = () => {
           <View>
             <Categories />
           </View>
+          {/* Artficats Home Feed */}
           <View>
             <ItemsFeed />
           </View>

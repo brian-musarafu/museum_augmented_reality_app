@@ -3,7 +3,8 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/HomeScreen';
 import LiveStream from '../screens/LiveStream';
 import Artifacts from '../screens/Artifacts';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import SettingsScreen from '../screens/SettingsScreen';
+import {Image, Settings, StyleSheet, Text, View} from 'react-native';
 
 const Tab = createBottomTabNavigator();
 const Tabs = () => {
@@ -34,11 +35,11 @@ const Tabs = () => {
                 justifyContent: 'center',
               }}>
               <Image
-                source={require('../assets/icons/homeOutlined.png')}
+                source={require('../assets/icons/homeFilled.png')}
                 resizeMode="contain"
                 style={{
-                  width: 25,
-                  height: 25,
+                  width: 20,
+                  height: 20,
                   tintColor: focused ? '#f4b942' : '#fff',
                 }}
               />
@@ -48,6 +49,7 @@ const Tabs = () => {
                   fontSize: 10,
                   fontWeight: 'bold',
                   letterSpacing: 1,
+                  marginTop: 5,
                 }}>
                 HOME
               </Text>
@@ -56,7 +58,7 @@ const Tabs = () => {
         }}
       />
       <Tab.Screen
-        name="Streem"
+        name="Stream"
         component={LiveStream}
         options={{
           tabBarIcon: ({focused}) => (
@@ -66,11 +68,11 @@ const Tabs = () => {
                 justifyContent: 'center',
               }}>
               <Image
-                source={require('../assets/icons/scannerOutline.png')}
+                source={require('../assets/icons/scannerFilled.png')}
                 resizeMode="contain"
                 style={{
-                  width: 25,
-                  height: 25,
+                  width: 20,
+                  height: 20,
                   tintColor: focused ? '#f4b942' : '#fff',
                 }}
               />
@@ -80,6 +82,7 @@ const Tabs = () => {
                   fontSize: 10,
                   fontWeight: 'bold',
                   letterSpacing: 1,
+                  marginTop: 5,
                 }}>
                 STREAM
               </Text>
@@ -88,7 +91,7 @@ const Tabs = () => {
         }}
       />
       <Tab.Screen
-        name="Settings"
+        name="Artifacts"
         component={Artifacts}
         options={{
           tabBarIcon: ({focused}) => (
@@ -98,11 +101,11 @@ const Tabs = () => {
                 justifyContent: 'center',
               }}>
               <Image
-                source={require('../assets/icons/gridOutlined.png')}
+                source={require('../assets/icons/gridFilled.png')}
                 resizeMode="contain"
                 style={{
-                  width: 25,
-                  height: 25,
+                  width: 20,
+                  height: 20,
                   tintColor: focused ? '#f4b942' : '#fff',
                 }}
               />
@@ -112,8 +115,42 @@ const Tabs = () => {
                   fontSize: 10,
                   fontWeight: 'bold',
                   letterSpacing: 1,
+                  marginTop: 5,
                 }}>
                 ARTIFACTS
+              </Text>
+            </View>
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Settings"
+        component={SettingsScreen}
+        options={{
+          tabBarIcon: ({focused}) => (
+            <View
+              style={{
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+              <Image
+                source={require('../assets/icons/settings-2Filled.png')}
+                resizeMode="contain"
+                style={{
+                  width: 20,
+                  height: 20,
+                  tintColor: focused ? '#f4b942' : '#fff',
+                }}
+              />
+              <Text
+                style={{
+                  color: focused ? '#fec93d' : '#fff',
+                  fontSize: 10,
+                  fontWeight: 'bold',
+                  letterSpacing: 1,
+                  marginTop: 5,
+                }}>
+                SETTINGS
               </Text>
             </View>
           ),

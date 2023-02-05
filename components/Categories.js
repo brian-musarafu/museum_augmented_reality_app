@@ -11,14 +11,12 @@ const Categories = () => {
         paddingHorizontal: 15,
         paddingTop: 10,
       }}>
+      <ScrollNav title="All" />
       <ScrollNav title="Statue" />
       <ScrollNav title="Paint" />
       <ScrollNav title="Traditional" />
       <ScrollNav title="Documentary" />
-      <ScrollNav title="Statue" />
-      <ScrollNav title="Statue" />
-      <ScrollNav title="Statue" />
-      <ScrollNav title="Statue" />
+      <ScrollNav title="Gallery" />
     </ScrollView>
   );
 };

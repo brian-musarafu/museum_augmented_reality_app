@@ -12,20 +12,10 @@ const MostViewedCard = ({imgUrl, title}) => {
           alignItems: 'center',
           position: 'absolute',
           bottom: 10,
-          left: 10,
+          left: 15,
+          right: 15,
         }}>
         <Text style={styles.titleStyle}>{title}</Text>
-        <Image
-          source={require('../assets/icons/chevronRight.png')}
-          resizeMode="contain"
-          style={{
-            width: 10,
-            height: 10,
-            tintColor: '#fff',
-            backgroundColor: '#f4b942',
-            padding: 10,
-          }}
-        />
       </View>
     </TouchableOpacity>
   );
