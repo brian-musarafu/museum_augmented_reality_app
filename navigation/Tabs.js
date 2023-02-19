@@ -2,7 +2,7 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/HomeScreen';
 import LiveStream from '../screens/LiveStream';
-import Artifacts from '../screens/Artifacts';
+import ArtifactsScreen from '../screens/ArtifactsScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import {Image, Settings, StyleSheet, Text, View} from 'react-native';
 
@@ -92,7 +92,7 @@ const Tabs = () => {
       />
       <Tab.Screen
         name="Artifacts"
-        component={Artifacts}
+        component={ArtifactsScreen}
         options={{
           tabBarIcon: ({focused}) => (
             <View

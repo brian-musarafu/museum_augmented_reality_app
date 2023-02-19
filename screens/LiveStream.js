@@ -1,55 +1,47 @@
-import React, {useState} from 'react';
 import {StyleSheet} from 'react-native';
+import React, {useState} from 'react';
 import {
   ViroARScene,
-  ViroText,
-  ViroTrackingStateConstants,
   ViroARSceneNavigator,
+  ViroAmbientLight,
+  Viro3DObject,
+  ViroARTrackingTargets,
+  ViroARImageMarker,
 } from '@viro-community/react-viro';
 
 const LiveStream = () => {
-  const [text, setText] = useState('Initializing AR...');
+  //Register Targets
+  ViroARTrackingTargets.createTargets({
+    skullImage: {
+      source: require('../assets/artifacts/Skull/Skull.jpg'),
+      orientation: 'Up',
+      physicalWidth: 0.165, //Real World width in metres
+      type: 'Image',
+    },
+  });
 
-  function onInitialized(state, reason) {
-    console.log('guncelleme', state, reason);
-    if (state === ViroTrackingStateConstants.TRACKING_NORMAL) {
-      setText('Hello World!');
-    } else if (state === ViroTrackingStateConstants.TRACKING_NONE) {
-      // Handle loss of tracking
-    }
-  }
+  const anchorFound = () => {
+    console.log('Anchor/Image Detected');
+  };
 
   return (
-    <ViroARScene onTrackingUpdated={onInitialized}>
-      <ViroText
-        text={text}
-        scale={[0.5, 0.5, 0.5]}
-        position={[0, 0, -1]}
-        style={styles.helloWorldTextStyle}
-      />
+    <ViroARScene>
+      <ViroARImageMarker target={'skullImage'} onAnchorFound={anchorFound}>
+        <ViroAmbientLight color="#ffffff">
+          <Viro3DObject
+            source={require('../assets/artifacts/Skull/12140_Skull_v3_L2.obj')}
+            scale={[0.5, 0.5, 0.5]}
+            // rotation={[-170, 0, 0]}
+            type="OBJ"
+          />
+        </ViroAmbientLight>
+      </ViroARImageMarker>
     </ViroARScene>
   );
 };
 
 export default () => {
   return (
-    <ViroARSceneNavigator
-      autofocus={true}
-      initialScene={{
-        scene: LiveStream,
-      }}
-      style={styles.f1}
-    />
+    <ViroARSceneNavigator autofocus={true} initialScene={{scene: LiveStream}} />
   );
 };
-
-var styles = StyleSheet.create({
-  f1: {flex: 1},
-  helloWorldTextStyle: {
-    fontFamily: 'Arial',
-    fontSize: 30,
-    color: '#ffffff',
-    textAlignVertical: 'center',
-    textAlign: 'center',
-  },
-});

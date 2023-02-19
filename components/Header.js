@@ -9,7 +9,7 @@ const Header = () => {
         <Image
           style={styles.accountProfile}
           source={{
-            uri: 'https://scontent.fhre1-1.fna.fbcdn.net/v/t39.30808-6/322692020_1152843278935133_1980589386525220045_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zk6LwkB6OJgAX8N9rvF&tn=8fn_zEYtzWvQ-mTD&_nc_ht=scontent.fhre1-1.fna&oh=00_AfBZ2v0BgcuLKr8Neqvt1iyc3iM-jpJfVXguYKexGE7x5g&oe=63DCB2E0',
+            uri: 'https://scontent.fhre1-1.fna.fbcdn.net/v/t39.30808-6/330977130_729593605180766_3061050376887023796_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ClfP1nhUe5IAX-4YSx-&_nc_oc=AQnxmRGxArhjt1U1ShcgGrhQHNhrL7Lt_3XiAdJzrVtPcqxeyb--sfQe0MQOPq7A37M&_nc_ht=scontent.fhre1-1.fna&oh=00_AfDZ9DTHq5YzJ9WPfEAZT0ZbnX4ZfVXvsFK9QUw_w4-31Q&oe=63F25417',
           }}
         />
       </View>
@@ -51,6 +51,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     paddingBottom: 10,
+    alignItems: 'center',
   },
   accountName: {
     marginRight: 5,

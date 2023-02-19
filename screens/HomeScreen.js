@@ -14,6 +14,8 @@ import Categories from '../components/Categories';
 import ItemsFeed from '../components/ItemsFeed';
 import MostViewed from '../components/MostViewed';
 import Header from '../components/Header';
+import ArtifactCard from '../components/ArtifactCard';
+import AllArtifacts from '../components/AllArtifacts';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -123,6 +125,9 @@ const HomeScreen = () => {
           <View>
             <ItemsFeed />
           </View>
+          <View>
+            <AllArtifacts />
+          </View>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -136,6 +141,7 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: '#fff',
     paddingBottom: 150,
+    minHeight: '100%',
   },
   headerWrapper: {
     display: 'flex',
