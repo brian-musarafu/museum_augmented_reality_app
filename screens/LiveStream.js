@@ -13,7 +13,7 @@ const LiveStream = () => {
   //Register Targets
   ViroARTrackingTargets.createTargets({
     skullImage: {
-      source: require('../assets/artifacts/Skull/Skull.jpg'),
+      source: require('../assets/artifacts/skull/skull.jpg'),
       orientation: 'Up',
       physicalWidth: 0.165, //Real World width in metres
       type: 'Image',
@@ -27,14 +27,13 @@ const LiveStream = () => {
   return (
     <ViroARScene>
       <ViroARImageMarker target={'skullImage'} onAnchorFound={anchorFound}>
-        <ViroAmbientLight color="#ffffff">
-          <Viro3DObject
-            source={require('../assets/artifacts/Skull/12140_Skull_v3_L2.obj')}
-            scale={[0.5, 0.5, 0.5]}
-            // rotation={[-170, 0, 0]}
-            type="OBJ"
-          />
-        </ViroAmbientLight>
+        <ViroAmbientLight color="#ffffff" intensity={200} />
+        <Viro3DObject
+          source={require('../assets/artifacts/skull/12140_Skull_v3_L2.obj')}
+          scale={[0.002, 0.002, 0.002]}
+          rotation={[-170, 0, 0]}
+          type="OBJ"
+        />
       </ViroARImageMarker>
     </ViroARScene>
   );

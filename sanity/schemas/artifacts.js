@@ -20,12 +20,17 @@ export default defineType({
     {
       name: 'image',
       type: 'image',
-      title: 'Image of Museum',
+      title: 'Display Image',
     },
     {
       name: 'ar_image',
-      type: 'image',
+      type: 'file',
       title: '3D AR Image',
+    },
+    {
+      name: 'other_images',
+      type: 'image',
+      title: 'Images of Artifact',
     },
     {
       name: 'lat',

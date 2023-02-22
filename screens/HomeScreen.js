@@ -16,6 +16,7 @@ import MostViewed from '../components/MostViewed';
 import Header from '../components/Header';
 import ArtifactCard from '../components/ArtifactCard';
 import AllArtifacts from '../components/AllArtifacts';
+import {ViroImage} from '@viro-community/react-viro';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -108,6 +109,7 @@ const HomeScreen = () => {
               justifyContent: 'space-between',
             }}>
             <Text style={styles.mostViewedTitle}>Categories</Text>
+
             <Image
               source={require('../assets/icons/arrowRight.png')}
               resizeMode="contain"
@@ -125,9 +127,9 @@ const HomeScreen = () => {
           <View>
             <ItemsFeed />
           </View>
-          <View>
+          {/* <View>
             <AllArtifacts />
-          </View>
+          </View> */}
         </View>
       </ScrollView>
     </SafeAreaView>

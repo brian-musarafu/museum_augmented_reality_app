@@ -1,5 +1,6 @@
 import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import React from 'react';
+import {ViroImage} from '@viro-community/react-viro';
 
 const ItemsCard = ({imageUrl, title, steps, location}) => {
   return (
@@ -17,6 +18,12 @@ const ItemsCard = ({imageUrl, title, steps, location}) => {
             top: 60,
           }}
         />
+        {/* <ViroImage
+          height={0.3}
+          width={0.3}
+          placeholderSource={{ uri:('https://www.alliphonewallpapers.com/images/wallpapers/640/w5wveftvn.jpg') }}
+          source={{uri: imageUrl}}
+        /> */}
         <Image source={{uri: imageUrl}} style={styles.imgStyle} />
         <View style={styles.inforContainer}>
           <View style={styles.titleContainer}>
@@ -79,7 +86,7 @@ const styles = StyleSheet.create({
   imgStyle: {
     height: 200,
     width: 200,
-    marginTop: 6,
+    
   },
   inforContainer: {
     paddingLeft: 30,

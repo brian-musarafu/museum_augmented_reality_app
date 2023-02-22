@@ -12,23 +12,23 @@ const MostViewed = () => {
         paddingTop: 10,
       }}>
       <MostViewedCard
-        imgUrl="https://ams03pap002files.storage.live.com/y4mMPPZ0h7VXhvlvIYnAi4nPFRs68445kfDzNOA-bfKpArgGbrtOdthT215mkp-HxRMRdO5vtQtej5xpPqU1ZIIJA-PlPjfo7AvzUCP7XBJQvrHNGSrvZfr5_M0_aMkvCdQDKV2DQMns6fLppTZAiDxXi192ykqBvhKrfo_2NQ1xR1lLSqRjCBM2uC2zScEM9xxY5pf3oCAptisPdU7OXNIJqK6Q1Ssi7oTHIaTUsR94xg?encodeFailures=1&width=608&height=410"
+        imageUrl="https://pbs.twimg.com/media/DHN7u01XoAATrEV.jpg"
         title="Greek Statue"
       />
       <MostViewedCard
-        imgUrl="https://ams03pap002files.storage.live.com/y4mMPPZ0h7VXhvlvIYnAi4nPFRs68445kfDzNOA-bfKpArgGbrtOdthT215mkp-HxRMRdO5vtQtej5xpPqU1ZIIJA-PlPjfo7AvzUCP7XBJQvrHNGSrvZfr5_M0_aMkvCdQDKV2DQMns6fLppTZAiDxXi192ykqBvhKrfo_2NQ1xR1lLSqRjCBM2uC2zScEM9xxY5pf3oCAptisPdU7OXNIJqK6Q1Ssi7oTHIaTUsR94xg?encodeFailures=1&width=608&height=410"
+        imageUrl="https://www.4cosplay.net/media/catalog/product/cache/1/image/650x650/9df78eab33525d08d6e5fb8d27136e95/h/a/harry_potter_luna_s_wand_5_.jpg"
         title="Greek Statue"
       />
       <MostViewedCard
-        imgUrl="https://ams03pap002files.storage.live.com/y4mMPPZ0h7VXhvlvIYnAi4nPFRs68445kfDzNOA-bfKpArgGbrtOdthT215mkp-HxRMRdO5vtQtej5xpPqU1ZIIJA-PlPjfo7AvzUCP7XBJQvrHNGSrvZfr5_M0_aMkvCdQDKV2DQMns6fLppTZAiDxXi192ykqBvhKrfo_2NQ1xR1lLSqRjCBM2uC2zScEM9xxY5pf3oCAptisPdU7OXNIJqK6Q1Ssi7oTHIaTUsR94xg?encodeFailures=1&width=608&height=410"
+        imageUrl="https://www.alliphonewallpapers.com/images/wallpapers/640/w5wveftvn.jpg"
         title="Greek Statue"
       />
       <MostViewedCard
-        imgUrl="https://ams03pap002files.storage.live.com/y4mMPPZ0h7VXhvlvIYnAi4nPFRs68445kfDzNOA-bfKpArgGbrtOdthT215mkp-HxRMRdO5vtQtej5xpPqU1ZIIJA-PlPjfo7AvzUCP7XBJQvrHNGSrvZfr5_M0_aMkvCdQDKV2DQMns6fLppTZAiDxXi192ykqBvhKrfo_2NQ1xR1lLSqRjCBM2uC2zScEM9xxY5pf3oCAptisPdU7OXNIJqK6Q1Ssi7oTHIaTUsR94xg?encodeFailures=1&width=608&height=410"
+        imageUrl="https://www.alliphonewallpapers.com/images/wallpapers/640/w5wveftvn.jpg"
         title="Greek Statue"
       />
       <MostViewedCard
-        imgUrl="https://ams03pap002files.storage.live.com/y4mMPPZ0h7VXhvlvIYnAi4nPFRs68445kfDzNOA-bfKpArgGbrtOdthT215mkp-HxRMRdO5vtQtej5xpPqU1ZIIJA-PlPjfo7AvzUCP7XBJQvrHNGSrvZfr5_M0_aMkvCdQDKV2DQMns6fLppTZAiDxXi192ykqBvhKrfo_2NQ1xR1lLSqRjCBM2uC2zScEM9xxY5pf3oCAptisPdU7OXNIJqK6Q1Ssi7oTHIaTUsR94xg?encodeFailures=1&width=608&height=410"
+        imageUrl="https://www.alliphonewallpapers.com/images/wallpapers/640/w5wveftvn.jpg"
         title="Greek Statue"
       />
     </ScrollView>
